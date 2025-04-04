@@ -1,0 +1,18 @@
+html, body {
+    width: 720px;  /* กำหนดความกว้าง */
+    height: 1280px; /* กำหนดความสูง */
+    margin: 0 auto; /* จัดให้อยู่ตรงกลาง */
+    background-image: url("bg2.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+p{
+    font-family: 'Mitr', sans-serif;
+    text-align: center;
+    color: white;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ขอให้คุณเจอกับวันที่ดี</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="p3.css">
+    <script src="p3.js" defer></script>
+</head>
+<body>
+
+    <p id="randomMessage"></p> <!-- ส่วนที่จะแสดงข้อความ -->
+
+    <script>
+        // สร้างอาร์เรย์ของข้อความที่ต้องการให้แสดง
+        const messages = [
+            "ขอให้ดวงดาวส่งพรให้คุณขอนะ",
+            "ขอให้ดอกไม้ผลิบานในใจคุณ",
+            "ขอให้คุณหลับฝันแล้วตื่นมาพบวันใหม่ที่ดีขึ้น",
+            "อย่าลืมมองหาความสุขเล็กๆน้อยๆระหว่างทางนะ",
+            "ไม่ว่ายังไงคุณก็พยายามแล้วล่ะ",
+            "ขอให้โลกนี้เข้าใจคุณนะ",
+            "ไม่ว่ายังไงก็ต้องมีพรุ่งนี้ให้ได้นะ",
+            "คุณก็ยังมีคุณนะ",
+            "ไม่ว่าจะเจออะไรมาก็อย่าลืมพักผ่อนนะ",
+            "อย่าลืมเล่าเรื่องนี้ให้คนที่รักคุณฟังด้วยนะ ต้องดีมากกว่านี้แน่นอน"
+        ];
+
+        // ฟังก์ชั่นที่สุ่มข้อความและแสดง
+        function showRandomMessage() {
+            const randomIndex = Math.floor(Math.random() * messages.length); // สุ่มหาค่าดัชนี
+            const randomMessage = messages[randomIndex]; // เลือกข้อความจากอาร์เรย์
+            document.getElementById("randomMessage").textContent = randomMessage; // แสดงข้อความ
+        }
+        window.onload = showRandomMessage;
+    </script>
+    
+</body>
+</html>

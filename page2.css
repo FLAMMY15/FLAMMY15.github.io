@@ -1,0 +1,101 @@
+html, body {
+    width: 720px;  /* กำหนดความกว้าง */
+    height: 1280px; /* กำหนดความสูง */
+    margin: 0 auto; /* จัดให้อยู่ตรงกลาง */
+    background-image: url("bg2.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* z-index: 1; */
+}
+.คำชี้แนะ{
+    z-index: 5;
+    font-family: 'Mitr', sans-serif;
+    /* จัดให้อยู่ตรงกลาง */
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+
+    border-radius: 15px;
+    line-height: 2.9;
+    font-size: 16px;
+    width: 520px;  /* กำหนดความกว้าง */
+    height: 700px; /* กำหนดความสูง */
+    margin: 0 auto; /* จัดให้อยู่ตรงกลาง */
+    background-image: url("คำเสนอ.jpg"); /* ใส่รูปพื้นหลัง */
+    background-size: cover;
+    background-position: center;
+    color: rgb(44, 40, 92); /* ให้ข้อความอ่านง่าย */
+    padding: 20px;
+}
+.ปุ่มปิด{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0px;
+    right:00px;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: px;
+    border-radius: 10px;
+}
+.ปุ่มปิด{
+    background: rgb(108, 18, 18);
+}
+.คำชี้แนะ.hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+h3{
+    position: absolute;
+    text-align: center;
+    top: 20%;
+    transform: translateX(80%);
+    color: #ffe601;
+}
+textarea {
+    
+    margin-top: 30%;
+    font-family: 'Mitr', sans-serif;
+    width: 97%;
+    min-height: 50px; /* กำหนดความสูงเริ่มต้น */
+    line-height: 1.5;     
+    font-size: 16px;
+    background-color: rgb(0,0,0,0);
+    border: none;
+    padding: 10px;
+    resize: none;
+    overflow: hidden;
+    color: #ffe601;
+}
+
+button {  
+    text-align: center;
+    font-family: 'Mitr', sans-serif;
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#แสดงข้อความ {
+    display: none;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+    border-radius: 5px;
+}

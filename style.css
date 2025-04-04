@@ -1,0 +1,64 @@
+/* สีพื้นหลัง */
+html, body {
+    width: 720px;  /* กำหนดความกว้าง */
+    height: 1280px; /* กำหนดความสูง */
+    margin: 0 auto; /* จัดให้อยู่ตรงกลาง */
+    background-image: url("พื้นหลัง.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* ปุ่มหน้าแรก */
+.ปุ่ม button{
+    font-family: 'Mitr', sans-serif;
+    background-color: rgb(255, 255, 225);
+    font-size: 16px;
+    line-height: 2;
+    width: 300px;
+    height: 150px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease; 
+    border-radius: 20px;
+    border: none;
+}
+.ปุ่ม button::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 150px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 50px 20px rgba(255, 248, 202, 0.8);
+    animation: glow 7s linear infinite;
+}
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 30px 10px rgba(255, 248, 202, 0.0);
+    }
+    25% {
+        box-shadow: 0 0 50px 20px rgba(170, 230, 252, 0.5);
+    }
+    50%{
+        box-shadow: 0 0 30px 10px rgba(212, 244, 255, 0.8);
+    }
+    100%{
+        box-shadow: 0 0 30px 10px rgba(255, 248, 202, 0.0);
+
+    }
+}
+.ปุ่ม button img{
+    width: 50px; /* ปรับขนาดรูปภาพ */
+    height: 30px;
+    margin: auto;
+    
+}
+.ปุ่ม button:hover {
+    transform: translate(-50%, -50%) scale(0.95); /* ทำให้ปุ่มดูเหมือนบุ๋มลง */
+    background-color: rgb(237, 243, 254);
+}
